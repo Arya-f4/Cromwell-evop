@@ -2,7 +2,20 @@
   "extends": "@tsconfig/docusaurus/tsconfig.json",
   "compilerOptions": {
     "skipLibCheck": true,
-    "target": "es5"
+    "target": "es5",
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
   },
-  "include": ["src/"]
+  "include": [
+    "src/"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
