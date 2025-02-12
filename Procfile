@@ -1,1 +1,1 @@
-web: PORT=$PORT npx cromwell start
+web: npx cromwell start --port=$PORT
